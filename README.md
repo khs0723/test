@@ -13,9 +13,9 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 - [Projects](#Projects)
 - [Resources](#Resources)
 
-# Projects
+## Projects
 
-# Resources
+## Resources
 
 ## Add your files
 
