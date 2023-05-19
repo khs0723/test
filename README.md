@@ -1,5 +1,5 @@
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=Nuclear%20AI%20Cyber&fontSize=90&animation=scalIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=Nuclear%20AI%20Cyber&fontSize=90&animation=scaleIn" />
 
 ISU CEADS efforts in nuclear AI and cybersecurity
 
