@@ -1,13 +1,4 @@
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=Nuclear%20AI%20Cyber&fontSize=90&animation=scaleIn&descAlign=50" />
-
-ISU CEADS efforts in nuclear AI and cybersecurity
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+<img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=Nuclear%20AI%20Cyber&fontSize=90&animation=scaleIn&desc=Idaho%20State%20University%20CEADS%20efforts%20in%20nuclear%20AI%20and%20cybersecurity&descAlignY=70" />
 
 ## Table of contentents 
 - [Projects](#Projects)
@@ -15,6 +6,12 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 - [Contributors](#Contributors)
 
 ## Projects
+The CEADS team has prototyped three attack surfaces: 
+1. inference attacks to “steal” or replicate the machine learning model with varying levels of information, 
+2. trojan attacks to infiltrate and falsify machine learning systems with “look-a-like” systems that have triggers for certain malicious behavior, and 
+3. adversarial reprogramming to minimally alter inputs that then trick machine learning systems into targeted misclassification. We found that autonomous systems are significantly vulnerable to these attacks.
+
+
 
 ## Resources
 
