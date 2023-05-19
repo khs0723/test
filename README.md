@@ -12,10 +12,13 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 ## Table of contentents 
 - [Projects](#Projects)
 - [Resources](#Resources)
+- [Contributors](#Contributors)
 
 ## Projects
 
 ## Resources
+
+## Contributors
 
 ## Add your files
 
