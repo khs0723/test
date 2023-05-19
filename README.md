@@ -7,7 +7,7 @@
 
 ## Projects
 The CEADS team has prototyped three attack surfaces: 
-1. [inference attacks](#Inference attacks) to “steal” or replicate the machine learning model with varying levels of information, 
+1. [inference attacks](#Inference-attacks) to “steal” or replicate the machine learning model with varying levels of information, 
 2. trojan attacks to infiltrate and falsify machine learning systems with “look-a-like” systems that have triggers for certain malicious behavior, and 
 3. adversarial reprogramming to minimally alter inputs that then trick machine learning systems into targeted misclassification. We found that autonomous systems are significantly vulnerable to these attacks.
 
