@@ -3,7 +3,7 @@
 ## Table of contentents 
 - [Projects](#Projects)
 - [Resources](#Resources)
-- [Reports & Materials](#Reports & Materials)
+- [Reports & Materials](#Reports-&-Materials)
 - [Contributors](#Contributors)
 
 ## Projects
