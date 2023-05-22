@@ -3,6 +3,7 @@
 ## Table of contentents 
 - [Projects](#Projects)
 - [Resources](#Resources)
+- [Reports & Materials](#Reports & Materials)
 - [Contributors](#Contributors)
 
 ## Projects
@@ -13,7 +14,7 @@ The CEADS team has prototyped three attack surfaces:
 
 ### Inference attacks
 https://gitlab.com/CEADS/nuclear_ai_cyber/-/tree/main/trojan
-
+## Reports & Materials
 ## Resources
 1. Introduction
     - [CEADS Website](https://ceads.gitlab.io/members/)
