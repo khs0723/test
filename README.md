@@ -1,9 +1,9 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=Nuclear%20AI%20Cyber&fontSize=90&animation=scaleIn&desc=Idaho%20State%20University%20CEADS%20efforts%20in%20nuclear%20AI%20and%20cybersecurity&descAlignY=70" />
 
 ## Table of contentents 
-- [Projects](#Projects)
-- [Resources](#Resources)
-- [Reports & Materials](#Reports-&-Materials)
+- [Projects](#projects)
+- [Resources](#resources)
+- [Reports & Materials](#reports-&-materials)
 - [Contributors](#Contributors)
 
 ## Projects
