@@ -811,3 +811,7 @@ orange circle
   /* text-align: center; */
   margin: auto;
 }
+
+.test {
+  text-align: center;
+}
