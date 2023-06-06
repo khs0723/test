@@ -808,9 +808,13 @@ orange circle
 }
 
 .tex {
-  /* text-align: center; */
+  text-align: center;
   margin: auto;
 }
+
+/* ul {
+  text-align: center;
+} */
 
 .test {
   text-align: center;
