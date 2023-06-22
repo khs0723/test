@@ -4,20 +4,35 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CEADS</title>
+    <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+
     <link href="./css/team.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./css/team.js"></script>
 
     <div class="container-fluid">
       <div class="px-lg-5">
@@ -43,29 +58,75 @@
               />
               <div class="p-4">
                 <h5><a href="#" class="text-dark">Dr. Pepo Mena</a></h5>
-                <p class="small text-muted mb-0">
-                  Dr. Mena is a current post-doc with CEADS and has been a CEADS
-                  member since 2018. He completed both a M.S. in Nuclear
-                  Engineering and a PhD. in Applied Science & Engineering while
-                  working in CEADS. His research includes data science
-                  applications for operations management and nuclear science. He
-                  is currently teaching at Idaho State University in both
-                  management and computer science as well as performing research
-                  in nuclear cyber security as a postdoc.
-                </p>
+
+                <p class="small text-muted mb-0"></p>
+
+                <!-- Modal Start -->
                 <div
-                  class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"
+                  class="modal fade"
+                  id="pepo"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
                 >
-                  <p class="small mb-0">
-                    <i class="fa fa-picture-o mr-2"></i
-                    ><span class="font-weight-bold">Linked In</span>
-                  </p>
-                  <div
-                    class="badge badge-danger px-3 rounded-pill font-weight-normal"
-                  >
-                    New
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                        ></button>
+                        <h5 class="modal-title" id="exampleModalLabel">Pepo</h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <img
+                        src="./public/pepo.jpeg"
+                        alt=""
+                        class="img-fluid card-img-top"
+                      />
+                      <div class="modal-body">
+                        Dr. Mena is a current post-doc with CEADS and has been a
+                        CEADS member since 2018. He completed both a M.S. in
+                        Nuclear Engineering and a PhD. in Applied Science &
+                        Engineering while working in CEADS. His research
+                        includes data science applications for operations
+                        management and nuclear science. He is currently teaching
+                        at Idaho State University in both management and
+                        computer science as well as performing research in
+                        nuclear cyber security as a postdoc.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- Modal End -->
+
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#pepo"
+                  class="btn mt-3 mb-2 mb-md-0 btn-outline-secondary btn-block"
+                >
+                  Bio
+                </button>
               </div>
             </div>
           </div>
@@ -75,34 +136,80 @@
           <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
             <div class="bg-white rounded shadow-sm">
               <img
-                src="https://bootstrapious.com/i/snippets/sn-gallery/img-2.jpg"
+                src="./public/samantha.jpeg"
                 alt=""
                 class="img-fluid card-img-top"
               />
               <div class="p-4">
                 <h5><a href="#" class="text-dark">Samantha Ross </a></h5>
-                <p class="small text-muted mb-0">
-                  Samantha Ross joined CEADS November of 2022. She is a current
-                  graduate student in Idaho State University’s Computer Science
-                  program. She graduated with her Bachelor’s of Science in
-                  Computer Science from Idaho State University. Samantha’s CEADS
-                  research involves the security of machine learning models,
-                  currently focusing on inference attacks utilizing automated
-                  machine learning.
-                </p>
+                <p class="small text-muted mb-0"></p>
+                <!-- Modal Start -->
                 <div
-                  class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"
+                  class="modal fade"
+                  id="sam"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
                 >
-                  <p class="small mb-0">
-                    <i class="fa fa-picture-o mr-2"></i
-                    ><span class="font-weight-bold">Linked In</span>
-                  </p>
-                  <div
-                    class="badge badge-primary px-3 rounded-pill font-weight-normal"
-                  >
-                    Trend
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                        ></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Samantha Ross
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <img
+                        src="./public/samantha.jpeg"
+                        alt=""
+                        class="img-fluid card-img-top"
+                      />
+                      <div class="modal-body">
+                        Samantha Ross joined CEADS November of 2022. She is a
+                        current graduate student in Idaho State University’s
+                        Computer Science program. She graduated with her
+                        Bachelor’s of Science in Computer Science from Idaho
+                        State University. Samantha’s CEADS research involves the
+                        security of machine learning models, currently focusing
+                        on inference attacks utilizing automated machine
+                        learning.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- Modal End -->
+
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#sam"
+                  class="btn mt-3 mb-2 mb-md-0 btn-outline-secondary btn-block"
+                >
+                  Bio
+                </button>
               </div>
             </div>
           </div>
@@ -112,36 +219,76 @@
           <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
             <div class="bg-white rounded shadow-sm">
               <img
-                src="https://bootstrapious.com/i/snippets/sn-gallery/img-3.jpg"
+                src="./public/Dunya.jpeg"
                 alt=""
                 class="img-fluid card-img-top"
               />
               <div class="p-4">
                 <h5><a href="#" class="text-dark">Dunya Bahar </a></h5>
-                <p class="small text-muted mb-0">
-                  Dunya is currently a researcher in the CEADS Cyber Nuclear
-                  Machine Learning group. They are set to graduate from ISU with
-                  an MS in Computer Science in May of 2024 and will pursue a
-                  career in AI/ML engineering.
-                </p>
+                <p class="small text-muted mb-0"></p>
+                <!-- Modal Start -->
                 <div
-                  class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"
+                  class="modal fade"
+                  id="dunya"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
                 >
-                  <p class="small mb-0">
-                    <i class="fa fa-picture-o mr-2"></i
-                    ><span class="font-weight-bold"
-                      ><a
-                        href="https://www.linkedin.com/in/dunya-bahar-5646251b5/"
-                        >Linked In</a
-                      ></span
-                    >
-                  </p>
-                  <div
-                    class="badge badge-warning px-3 rounded-pill font-weight-normal text-white"
-                  >
-                    Featured
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                        ></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Dunya Bahar
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <img
+                        src="./public/Dunya.jpeg"
+                        alt=""
+                        class="img-fluid card-img-top"
+                      />
+                      <div class="modal-body">
+                        Dunya is currently a researcher in the CEADS Cyber
+                        Nuclear Machine Learning group. They are set to graduate
+                        from ISU with an MS in Computer Science in May of 2024
+                        and will pursue a career in AI/ML engineering.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- Modal End -->
+
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#dunya"
+                  class="btn mt-3 mb-2 mb-md-0 btn-outline-secondary btn-block"
+                >
+                  Bio
+                </button>
               </div>
             </div>
           </div>
@@ -151,40 +298,87 @@
           <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
             <div class="bg-white rounded shadow-sm">
               <img
-                src="https://bootstrapious.com/i/snippets/sn-gallery/img-4.jpg"
+                src="./public/shah.jpeg"
                 alt=""
                 class="img-fluid card-img-top"
               />
               <div class="p-4">
                 <h5>
-                  <a href="#" class="text-dark">Shah Md. Nehal Hasnaeen s </a>
+                  <a href="#" class="text-dark">Shah Md. Nehal Hasnaeen </a>
                 </h5>
-                <p class="small text-muted mb-0">
-                  Hasnaeen is working with CEADS as a part of the Cyber Nuclear
-                  Research team starting summer 2023. His research interests
-                  include exploring the implementation of ML in electromagnetic
-                  signal analysis and cyber security. He will graduate with a
-                  Masters in Electrical and Computer Engineering at Idaho State
-                  University this summer and will start pursuing a PhD in Data
-                  Science from the University of Tennessee Knoxville on a
-                  graduate fellowship awarded by the Oak Ridge National
-                  Laboratory starting this fall. He has worked on refrigerated
-                  warehouse power optimization schemes and ultra-high frequency
-                  RFID electromagnetic fingerprinting using tree models.
-                </p>
+                <p class="small text-muted mb-0"></p>
+                <!-- Modal Start -->
                 <div
-                  class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"
+                  class="modal fade"
+                  id="Hasnaeen"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
                 >
-                  <p class="small mb-0">
-                    <i class="fa fa-picture-o mr-2"></i
-                    ><span class="font-weight-bold">Linked In</span>
-                  </p>
-                  <div
-                    class="badge badge-success px-3 rounded-pill font-weight-normal"
-                  >
-                    Hot
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                        ></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Shah Md. Nehal Hasnaeen
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <img
+                        src="./public/shah.jpeg"
+                        alt=""
+                        class="img-fluid card-img-top"
+                      />
+                      <div class="modal-body">
+                        Hasnaeen is working with CEADS as a part of the Cyber
+                        Nuclear Research team starting summer 2023. His research
+                        interests include exploring the implementation of ML in
+                        electromagnetic signal analysis and cyber security. He
+                        will graduate with a Masters in Electrical and Computer
+                        Engineering at Idaho State University this summer and
+                        will start pursuing a PhD in Data Science from the
+                        University of Tennessee Knoxville on a graduate
+                        fellowship awarded by the Oak Ridge National Laboratory
+                        starting this fall. He has worked on refrigerated
+                        warehouse power optimization schemes and ultra-high
+                        frequency RFID electromagnetic fingerprinting using tree
+                        models.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- Modal End -->
+
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#Hasnaeen"
+                  class="btn mt-3 mb-2 mb-md-0 btn-outline-secondary btn-block"
+                >
+                  Bio
+                </button>
               </div>
             </div>
           </div>
@@ -194,33 +388,81 @@
           <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
             <div class="bg-white rounded shadow-sm">
               <img
-                src="https://bootstrapious.com/i/snippets/sn-gallery/img-5.jpg"
+                src="./public/McLaren.jpeg"
                 alt=""
                 class="img-fluid card-img-top"
               />
               <div class="p-4">
-                <h5><a href="#" class="text-dark">Kallie McLaren </a></h5>
-                <p class="small text-muted mb-0">
-                  Kallie is currently an undergraduate enrolled at Idaho State
-                  University. She is a senior and is dual majoring in Applied
-                  Mathematics and Statistics as well as obtaining a minor in
-                  Computer Science. She is currently planning to pursue a career
-                  in data science and/or cybersecurity. Her internships in CEADS
-                  have been the EXAsmr project as well as Nuclear Cybersecurity.
-                </p>
+                <h5>
+                  <a href="#" class="text-dark">Kallie McLaren </a>
+                </h5>
+                <p class="small text-muted mb-0"></p>
+                <!-- Modal Start -->
                 <div
-                  class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"
+                  class="modal fade"
+                  id="McLaren"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
                 >
-                  <p class="small mb-0">
-                    <i class="fa fa-picture-o mr-2"></i
-                    ><span class="font-weight-bold">Linked In</span>
-                  </p>
-                  <div
-                    class="badge badge-primary px-3 rounded-pill font-weight-normal"
-                  >
-                    New
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                        ></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Kallie McLaren
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <img
+                        src="./public/McLaren.jpeg"
+                        alt=""
+                        class="img-fluid card-img-top"
+                      />
+                      <div class="modal-body">
+                        Kallie is currently an undergraduate enrolled at Idaho
+                        State University. She is a senior and is dual majoring
+                        in Applied Mathematics and Statistics as well as
+                        obtaining a minor in Computer Science. She is currently
+                        planning to pursue a career in data science and/or
+                        cybersecurity. Her internships in CEADS have been the
+                        EXAsmr project as well as Nuclear Cybersecurity.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- Modal End -->
+
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#McLaren"
+                  class="btn mt-3 mb-2 mb-md-0 btn-outline-secondary btn-block"
+                >
+                  Bio
+                </button>
               </div>
             </div>
           </div>
@@ -230,33 +472,80 @@
           <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
             <div class="bg-white rounded shadow-sm">
               <img
-                src="https://bootstrapious.com/i/snippets/sn-gallery/img-6.jpg"
+                src="./public/Hill.jpeg"
                 alt=""
                 class="img-fluid card-img-top"
               />
               <div class="p-4">
-                <h5><a href="#" class="text-dark">Eric Hill </a></h5>
-                <p class="small text-muted mb-0">
-                  Eric Hill is an undergraduate at Idaho State University. He is
-                  a senior in the Mechanical Engineering program, and is also
-                  pursuing a Computer Science minor and a Math minor. He is
-                  working on the CEADS cyber nuke AI project. He is interested
-                  in furthering his knowledge of both engineering and computer
-                  science.
-                </p>
+                <h5>
+                  <a href="#" class="text-dark">Eric Hill </a>
+                </h5>
+                <p class="small text-muted mb-0"></p>
+                <!-- Modal Start -->
                 <div
-                  class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"
+                  class="modal fade"
+                  id="Hill"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
                 >
-                  <p class="small mb-0">
-                    <i class="fa fa-picture-o mr-2"></i
-                    ><span class="font-weight-bold">Linked In</span>
-                  </p>
-                  <div
-                    class="badge badge-warning px-3 rounded-pill font-weight-normal text-white"
-                  >
-                    Featured
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                        ></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Eric Hill
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <img
+                        src="./public/Hill.jpeg"
+                        alt=""
+                        class="img-fluid card-img-top"
+                      />
+                      <div class="modal-body">
+                        Eric Hill is an undergraduate at Idaho State University.
+                        He is a senior in the Mechanical Engineering program,
+                        and is also pursuing a Computer Science minor and a Math
+                        minor. He is working on the CEADS cyber nuke AI project.
+                        He is interested in furthering his knowledge of both
+                        engineering and computer science.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- Modal End -->
+
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#Hill"
+                  class="btn mt-3 mb-2 mb-md-0 btn-outline-secondary btn-block"
+                >
+                  Bio
+                </button>
               </div>
             </div>
           </div>
@@ -266,46 +555,496 @@
           <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
             <div class="bg-white rounded shadow-sm">
               <img
-                src="https://bootstrapious.com/i/snippets/sn-gallery/img-7.jpg"
+                src="./public/Banda.jpeg"
                 alt=""
                 class="img-fluid card-img-top"
               />
               <div class="p-4">
-                <h5><a href="#" class="text-dark">Sindi Banda </a></h5>
-                <p class="small text-muted mb-0">
-                  Sindi is a senior at Idaho State University, majoring in
-                  Business Informatics. Alongside his studies, he has also
-                  worked as an AR/VR developer in the Department of Science and
-                  Civil Engineering at Idaho State University as a career path
-                  intern. This summer, he will be joining the CEADS team as a
-                  research intern, focusing on Cyber Nuclear Machine Learning.
-                </p>
+                <h5>
+                  <a href="#" class="text-dark">Sindi Banda </a>
+                </h5>
+                <p class="small text-muted mb-0"></p>
+                <!-- Modal Start -->
                 <div
-                  class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4"
+                  class="modal fade"
+                  id="sindi"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
                 >
-                  <p class="small mb-0">
-                    <i class="fa fa-picture-o mr-2"></i
-                    ><span class="font-weight-bold"
-                      ><a href="https://www.linkedin.com/in/sindi-banda/"
-                        >Linked In</a
-                      ></span
-                    >
-                  </p>
-                  <div
-                    class="badge badge-info px-3 rounded-pill font-weight-normal"
-                  >
-                    Hot
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                        ></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Sindi Banda
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <img
+                        src="./public/Banda.jpeg"
+                        alt=""
+                        class="img-fluid card-img-top"
+                      />
+                      <div class="modal-body">
+                        Sindi is a senior at Idaho State University, majoring in
+                        Business Informatics. Alongside his studies, he has also
+                        worked as an AR/VR developer in the Department of
+                        Science and Civil Engineering at Idaho State University
+                        as a career path intern. This summer, he will be joining
+                        the CEADS team as a research intern, focusing on Cyber
+                        Nuclear Machine Learning.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- Modal End -->
+
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#sindi"
+                  class="btn mt-3 mb-2 mb-md-0 btn-outline-secondary btn-block"
+                >
+                  Bio
+                </button>
               </div>
             </div>
           </div>
           <!-- End -->
-        </div>
-        <div class="py-5 text-right">
-          <a href="#" class="btn btn-dark px-5 py-3 text-uppercase"
-            >Show me more</a
-          >
+
+          <!-- Gallery item -->
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="bg-white rounded shadow-sm">
+              <img
+                src="./public/Zac.jpeg"
+                alt=""
+                class="img-fluid card-img-top"
+              />
+              <div class="p-4">
+                <h5>
+                  <a href="#" class="text-dark">Zac Schepis </a>
+                </h5>
+                <p class="small text-muted mb-0"></p>
+                <!-- Modal Start -->
+                <div
+                  class="modal fade"
+                  id="Zac"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                        ></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Zac Schepis
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <img
+                        src="./public/Zac.jpeg"
+                        alt=""
+                        class="img-fluid card-img-top"
+                      />
+                      <div class="modal-body">
+                        Zac at the time of writing this, is an undergraduate
+                        student at ISU. He is majoring in Computer Science and
+                        is working on a cyber security certificate on the side.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal End -->
+
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#Zac"
+                  class="btn mt-3 mb-2 mb-md-0 btn-outline-secondary btn-block"
+                >
+                  Bio
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End -->
+
+          <!-- Gallery item -->
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="bg-white rounded shadow-sm">
+              <img
+                src="./public/Gabriel.jpeg"
+                alt=""
+                class="img-fluid card-img-top"
+              />
+              <div class="p-4">
+                <h5>
+                  <a href="#" class="text-dark">Gabriel Ory </a>
+                </h5>
+                <p class="small text-muted mb-0"></p>
+                <!-- Modal Start -->
+                <div
+                  class="modal fade"
+                  id="Gabriel"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                        ></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Gabriel Ory
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <img
+                        src="./public/Gabriel.jpeg"
+                        alt=""
+                        class="img-fluid card-img-top"
+                      />
+                      <div class="modal-body">
+                        Gabriel is an undergraduate student at Idaho State
+                        University majoring in Computer Science and minoring in
+                        Applied Mathematics. He is a sophomore who joined CEADS
+                        on the Cyber Nuclear Machine Learning project in the
+                        summer of 2023. Additionally, he has been a math tutor
+                        at ISU since the spring of 2022, with experience
+                        tutoring in the TAP Center and for the START and Adult
+                        Education programs. In the future, he hopes to pursue a
+                        career in data science or game development.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal End -->
+
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#Gabriel"
+                  class="btn mt-3 mb-2 mb-md-0 btn-outline-secondary btn-block"
+                >
+                  Bio
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End -->
+
+          <!-- Gallery item -->
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="bg-white rounded shadow-sm">
+              <img
+                src="./public/Kim.jpeg"
+                alt=""
+                class="img-fluid card-img-top"
+              />
+              <div class="p-4">
+                <h5>
+                  <a href="#" class="text-dark">Hyunsu Kim </a>
+                </h5>
+                <p class="small text-muted mb-0"></p>
+                <!-- Modal Start -->
+                <div
+                  class="modal fade"
+                  id="Kim"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                        ></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Hyunsu Kim
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <img
+                        src="./public/Kim.jpeg"
+                        alt=""
+                        class="img-fluid card-img-top"
+                      />
+                      <div class="modal-body">
+                        Hyunsu Kim is an undergraduate student at Idaho State
+                        University. He is majoring in computer science and
+                        senior. He is doing an internship at CEADS as a member
+                        of the Cyber Nuclear Machine Learning team.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal End -->
+
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#Kim"
+                  class="btn mt-3 mb-2 mb-md-0 btn-outline-secondary btn-block"
+                >
+                  Bio
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End -->
+
+          <!-- Gallery item -->
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="bg-white rounded shadow-sm">
+              <img
+                src="./public/Gunnar.jpeg"
+                alt=""
+                class="img-fluid card-img-top"
+              />
+              <div class="p-4">
+                <h5>
+                  <a href="#" class="text-dark">Gunnar Babicz </a>
+                </h5>
+                <p class="small text-muted mb-0"></p>
+                <!-- Modal Start -->
+                <div
+                  class="modal fade"
+                  id="Gunnar                  "
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                        ></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Gunnar Babicz
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <img
+                        src="./public/Gunnar.jpeg"
+                        alt=""
+                        class="img-fluid card-img-top"
+                      />
+                      <div class="modal-body">
+                        Gunnar is an undergraduate student in Computer Science.
+                        He is currently working on the Nuclear Cybersecurity
+                        project..
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal End -->
+
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#Gunnar                  "
+                  class="btn mt-3 mb-2 mb-md-0 btn-outline-secondary btn-block"
+                >
+                  Bio
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End -->
+
+          <!-- Gallery item -->
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="bg-white rounded shadow-sm">
+              <img
+                src="./public/Khanal.jpeg"
+                alt=""
+                class="img-fluid card-img-top"
+              />
+              <div class="p-4">
+                <h5>
+                  <a href="#" class="text-dark">Sansar Khanal </a>
+                </h5>
+                <p class="small text-muted mb-0"></p>
+                <!-- Modal Start -->
+                <div
+                  class="modal fade"
+                  id="Sansar                  "
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-hidden="true"
+                        ></button>
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Sansar Khanal
+                        </h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <img
+                        src="./public/Khanal.jpeg"
+                        alt=""
+                        class="img-fluid card-img-top"
+                      />
+                      <div class="modal-body">
+                        My name is Sansar Kharal. I am from Nepal. I am majoring
+                        in Computer Science at Idaho State University. I am in
+                        my junior year right now. I am currently working on the
+                        Cyber Nuclear Project this summer as an Intern for Dr.
+                        Kerby and Dr. Mena. Right now. I am planning to pursue
+                        my future career in Software Design or Artificial
+                        Intelligence.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal End -->
+
+                <button
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#Sansar                  "
+                  class="btn mt-3 mb-2 mb-md-0 btn-outline-secondary btn-block"
+                >
+                  Bio
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End -->
         </div>
       </div>
     </div>

@@ -14,3 +14,30 @@ body {
   height: 40vh;
   object-fit: cover;
 }
+
+.detailInfo {
+}
+
+.text-block {
+  /* height: 195px; */
+  line-height: 1.4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+}
+
+.text-block2 {
+  /* height: 195px; */
+  line-height: 1.4em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 20;
+  -webkit-box-orient: vertical;
+}
+
+.hide {
+  display: none;
+}
